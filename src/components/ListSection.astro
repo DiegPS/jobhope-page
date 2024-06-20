@@ -1,0 +1,30 @@
+---
+interface Props {
+  name: string;
+  url: string;
+  icon: any;
+}
+
+const { url, name, icon: PropsIcon } = Astro.props;
+---
+
+<li>
+  <PropsIcon />
+  <a href={url} target="_blank" rel="noopener noreferrer">
+    <p>
+      {name}
+    </p>
+  </a>
+</li>
+<style>
+  li {
+    display: flex;
+    gap: 2rem;
+  }
+  a:hover {
+    color: #17b890;
+  }
+  a {
+    transition: all 0.2s ease-in-out;
+  }
+</style>
