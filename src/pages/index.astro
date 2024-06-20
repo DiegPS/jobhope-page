@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import ListSection from "../components/ListSection.astro";
 import ReactIcon from "../components/icons/ReactIcon.astro";
 import WorkIcon from "../components/icons/WorkIcon.astro";
+import AngularIcon from "../components/icons/AngularIcon.astro";
+import VueIcon from "../components/icons/VueIcon.astro";
 
 const websitesList = [
   {
@@ -12,8 +14,33 @@ const websitesList = [
   },
   {
     url: "https://mx.indeed.com/jobs?q=react&l=Remote%20-%20Mexico&sort=date",
-    name: "Indeed - Remote - Mexico - React - Date",
+    name: "Indeed - Remote - Mexico - Date",
     icon: ReactIcon,
+  },
+  {
+    url: "https://mx.indeed.com/jobs?q=angular&l=Remote%20-%20Mexico&sort=date",
+    name: "Indeed - Remote - Mexico - Date",
+    icon: AngularIcon,
+  },
+  {
+    url: "https://mx.indeed.com/jobs?q=vue&l=Remote%20-%20Mexico&sort=date",
+    name: "Indeed - Remote - Mexico - Date",
+    icon: VueIcon,
+  },
+  {
+    url: "https://mx.computrabajo.com/trabajo-de-react-en-remoto?by=publicationtime",
+    name: "Computrabajo - Remote - Mexico - Date",
+    icon: ReactIcon,
+  },
+  {
+    url: "https://mx.computrabajo.com/trabajo-de-angular-en-remoto?by=publicationtime",
+    name: "Computrabajo - Remote - Mexico - Date",
+    icon: AngularIcon,
+  },
+  {
+    url: "https://mx.computrabajo.com/trabajo-de-vue-en-remoto?by=publicationtime",
+    name: "Computrabajo - Remote - Mexico - Date",
+    icon: VueIcon,
   },
 ];
 ---
@@ -28,4 +55,10 @@ const websitesList = [
   </ul>
 </Layout>
 
-<style></style>
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+</style>

@@ -17,14 +17,25 @@ const { url, name, icon: PropsIcon } = Astro.props;
   </a>
 </li>
 <style>
+  a {
+    background-color: #2f17b815;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
   li {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    align-items: center;
   }
-  a:hover {
+  p:hover {
     color: #17b890;
   }
-  a {
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
     transition: all 0.2s ease-in-out;
   }
 </style>
